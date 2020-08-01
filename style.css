@@ -10,26 +10,15 @@ html {
   --secondary: #fff;
 }
 
-body {
-  display: grid;
-  grid-template-areas: 
-  "hdr hdr hdr hdr hdr hdr"
-  "mn mn mn mn mn mn"
-  "ftr ftr ftr ftr ftr ftr"
-  ;
-  overflow-x: hidden;
+header, main, footer {
+  border: 1px solid #000;
 }
 
 a, a:active, a:visited {
   color: #000;
 }
 
-header, main, footer {
-  border: 1px solid #000;
-}
-
 header {
-  grid-area: hdr;
   height: 15vh;
   font-size: 1.3rem;
 }
@@ -70,18 +59,20 @@ header {
 }
 
 main {
-  grid-area: mn;
   min-height: 75vh;
 }
 
 footer {
-  grid-area: ftr;
   height: 10vh;
 }
 
 @media only screen and (max-width: 360px) {
   header {
+    width: 100%;
     height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
   }
   
   .nav-ul {
@@ -92,6 +83,7 @@ footer {
     flex-direction: column;
     transform: translateX(100%);
     pointer-events: none;
+    opacity: 0;
     transition: all 0.3s;
   }
   
@@ -115,9 +107,11 @@ footer {
   .active-ul {
     transform: translateX(0%);
     pointer-events: all;
+    opacity: 1;
   }
   
   main {
+    margin-top: 10vh;
     min-height: 80vh;
   }
   
