@@ -77,10 +77,10 @@ footer {
   
   .nav-ul {
     width: 30%;
+    flex-direction: column;
     position: absolute;
     top: 100%;
     right: 0;
-    flex-direction: column;
     transform: translateX(100%);
     pointer-events: none;
     opacity: 0;
