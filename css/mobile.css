@@ -1,0 +1,53 @@
+.container {
+  grid-template-areas:
+  ". . . . . ."
+  "mn mn mn mn mn mn"
+  "ftr ftr ftr ftr ftr ftr"
+  ;
+}
+
+header {
+  height: 10vh;
+}
+
+.nav-ul {
+  width: 30%;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  transform: translateX(100%);
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.nav-ul a {
+  margin-bottom: 1px;
+  padding: 8px 12px;
+  border-radius: 30px 0 0 30px;
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+.nav-burger {
+  display: block;
+  cursor: pointer;
+}
+
+.active-ul {
+  transform: translateX(0%);
+  pointer-events: all;
+  opacity: 1;
+}
+
+main {
+  margin-top: 10vh;
+  height: auto;
+  overflow: visible;
+}
+
+footer {
+  margin: 0;
+  height: 50vh;
+}

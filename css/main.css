@@ -1,0 +1,21 @@
+main {
+  grid-area: mn;
+  background: lightblue;
+  margin-top: 15vh;
+  height: 85vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#about, #projects {
+  width: 100vw;
+  height: 85vh;
+}
+
+#about {
+  background: lightgrey;
+}
+
+#projects {
+  background: lightcyan;
+}

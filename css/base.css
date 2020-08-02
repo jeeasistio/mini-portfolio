@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  --primary: #000;
+  --secondary: #fff;
+}
+
+.container {
+  display: grid;
+  grid-template-areas: 
+  ". . . . . ."
+  "mn mn mn ftr ftr ftr"
+  "mn mn mn ftr ftr ftr"
+  ;
+  position: relative;
+  overflow: hidden;
+}
+
+header, main, footer {
+  border: 1px solid #000;
+}
