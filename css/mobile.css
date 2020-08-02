@@ -47,6 +47,10 @@ main {
   overflow: visible;
 }
 
+#about, #projects {
+  height: 100vh;
+}
+
 footer {
   margin: 0;
   height: 50vh;
