@@ -7,15 +7,49 @@ main {
   overflow: hidden;
 }
 
-#about, #projects {
+.about, .projects {
   width: 100vw;
   height: 85vh;
 }
 
-#about {
-  background: lightgrey;
+.about {
+  background: lightpink;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-#projects {
+.about-hi, .skill-heading {
+  font-weight: bolder;
+  font-size: 1.8rem;
+}
+
+.about-text, .about-skills {
+  width: 40%;
+  font-size: 1.3rem;
+  line-height: 18px;
+}
+
+.about-skills {
+  text-align: center;
+  display: none;
+  justify-content: space-evenly;
+}
+
+.skill {
+  flex: 1;
+}
+
+.skill-heading {
+  margin-bottom: 10px;
+}
+
+.about-photo {
+  width: 150px;
+  border-radius: 30px;
+}
+
+.projects {
   background: lightcyan;
 }

@@ -47,8 +47,25 @@ main {
   overflow: visible;
 }
 
-#about, #projects {
+.about, .projects {
   height: 100vh;
+}
+
+.about {
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+}
+
+.about-text, .about-photo, .about-skills {
+  margin-top: 15vh;
+}
+
+.about-text, .about-skills {
+  width: 70%;
+}
+
+.about-photo {
+  border-radius: 50%;
 }
 
 footer {
