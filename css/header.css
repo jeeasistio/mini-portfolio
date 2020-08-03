@@ -1,4 +1,4 @@
-header {
+.header {
   width: 100vw;
   height: 15vh;
   font-size: 1.3rem;
@@ -6,6 +6,7 @@ header {
   top: 0;
   left: 0;
   background: var(--secondary);
+  z-index: 2;
 }
 
 .nav {

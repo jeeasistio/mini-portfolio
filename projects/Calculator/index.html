@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <title>Calculator</title>
+</head>
+<body>
+  <header>
+    <h1>Calculator</h1>
+  </header>
+
+  <main id="calculator">
+    <section id="output">
+      <p id="output-num"></p>
+      <p id="history-num"></p>
+      <p id="erase">&#x232b;</p>
+    </section>
+
+    <section id="buttons">
+      <div class="btn" id="clear">C</div>
+      <div data-type="clickable" class="btn">/</div>
+      
+      <div data-type="clickable" class="btn">7</div>
+      <div data-type="clickable" class="btn">8</div>
+      <div data-type="clickable" class="btn">9</div>
+      <div data-type="clickable" class="btn">*</div>
+
+      <div data-type="clickable" class="btn">4</div>
+      <div data-type="clickable" class="btn">5</div>
+      <div data-type="clickable" class="btn">6</div>
+      <div data-type="clickable" class="btn">+</div>
+
+      <div data-type="clickable" class="btn">1</div>
+      <div data-type="clickable" class="btn">2</div>
+      <div data-type="clickable" class="btn">3</div>
+      <div data-type="clickable" class="btn">-</div>
+
+      <div data-type="clickable" class="btn">.</div>
+      <div data-type="clickable" class="btn">0</div>
+      <div class="btn" id="equals">=</div>
+    </section>
+  </main>
+  <script src="script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

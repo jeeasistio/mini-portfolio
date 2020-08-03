@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+:root {
+  --black: #232526;
+}
+
+body {
+  background: linear-gradient(180deg, var(--black), #414345);
+  color: whitesmoke;
+  font-size: 62.5%;
+  min-height: 100vh;
+}
+
+header {
+  font: 1.5rem "Merriweather", serif;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+form input {
+  width: 40%;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: whitesmoke;
+  border: none;
+}
+
+form button {
+  color: whitesmoke;
+  background: var(--black);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+form button:hover {
+  background: whitesmoke;
+  color: var(--black);
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  list-style-type: none;
+  min-width: 30%;
+}
+
+.todo {
+  background: whitesmoke;
+  color: var(--black);
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+.todo-item {
+  flex: 1;
+  font: 1rem "Lato", serif;
+  padding: 0 0.5rem;
+}
+
+.completed-btn,
+.trash-btn {
+  color: whitesmoke;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.completed-btn {
+  background: #299617;
+}
+
+.trash-btn {
+  background: #b33b24;
+}
+
+.fa-check,
+.fa-trash {
+  pointer-events: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.fall {
+  transform: translateY(8rem) rotatez(20deg);
+  opacity: 0;
+}
+
+.filter-todo {
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 0.2rem;
+  background: whitesmoke;
+  color: var(--black);
+  font: 0.8rem "Lato", serif;
+}
+
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+  width: 30%;
+}
+
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  background: var(--black);
+  color: white;
+  top: 0;
+  right: 0;
+  padding: 0.3rem;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.select:hover:after {
+  background: whitesmoke;
+  color: var(--black);
+}
+
+@media only screen and (min-width: 480px) {
+  .select {
+    width: 20%;
+  }
+}

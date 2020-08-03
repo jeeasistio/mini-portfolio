@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./style.css" type="text/css" media="all" />
+  <title>Weight Converter</title>
+</head>
+<body>
+  <header>
+    <h1><i class="fas fa-balance-scale"></i> Weight Converter</h1>
+  </header>
+  <main class="weight-converter">
+    <section class="input">
+      <form>
+        <input type="number" id="weight-input" placeholder="Enter pounds..." />
+      </form>
+    </section>
+    <section class="output">
+      <div class="grams">
+        <h3>Grams:</h3>
+        <div class="g-output"></div>
+      </div>
+      <div class="kilograms">
+        <h3>Kilograms:</h3>
+        <div class="kg-output"></div>
+      </div>
+      <div class="ounces">
+        <h3>Ounces:</h3>
+        <div class="oz-output"></div>
+      </div>
+    </section>
+  </main>
+  
+  <script src="./app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

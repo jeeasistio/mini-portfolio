@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CodePen - To-do List</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Merriweather&amp;display=swap'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Lato&amp;display=swap'>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <!-- partial:index.partial.html -->
+  <header>
+    <h2>To-do List</h2>
+  </header>
+
+  <main>
+    <form>
+      <input type="" class="todo-input">
+      <button class="todo-button">
+        <i class="fas fa-plus-square"></i>
+      </button>
+      <div class="select">
+        <select name="todos" class="filter-todo">
+          <option value="all">All</option>
+          <option value="completed">Complete</option>
+          <option value="uncomplete">Uncomplete</option>
+        </select>
+      </div>
+    </form>
+    <div class="todo-container">
+      <ul class="todo-list"></ul>
+    </div>
+  </main>
+  <!-- partial -->
+  <script src="./script.js"></script>
+
+</body>
+</html>

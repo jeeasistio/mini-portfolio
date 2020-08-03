@@ -1,4 +1,4 @@
-main {
+.main {
   grid-area: mn;
   background: lightblue;
   margin-top: 15vh;
@@ -27,29 +27,122 @@ main {
 
 .about-text, .about-skills {
   width: 40%;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   line-height: 18px;
+  animation: fadeIn 0.5s;
 }
 
 .about-skills {
   text-align: center;
   display: none;
-  justify-content: space-evenly;
 }
 
 .skill {
   flex: 1;
+  padding: 5px;
+}
+
+.skill-png {
+  width: 40px;
 }
 
 .skill-heading {
   margin-bottom: 10px;
 }
 
-.about-photo {
+.about-photo-ctn {
   width: 150px;
+  height: 150px;
+  transform-style: preserve-3d;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.about-photo, .skill-photo {
+  position: absolute;
+  backface-visibility: hidden;
   border-radius: 30px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.50);
+}
+
+.about-photo {
+  width: 100%;
+  height: 100%;
+}
+
+.skill-photo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary);
+  color: var(--secondary);
+  letter-spacing: 3px;
+  font-size: 2.5rem;
+  transform: rotateY(180deg);
+}
+
+.showActive {
+  transform: rotateY(180deg);
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
 
 .projects {
+  overflow: scroll;
   background: lightcyan;
+}
+
+.projects-container {
+  font-size: 1.3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 150px);
+  grid-gap: 25px 8px;
+  justify-content: center;
+}
+
+.projects-header, .projects-intro {
+  font-size: 1.5rem;
+  margin: 25px;
+  text-align: center;
+}
+
+.project figure {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.project figcaption {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.project:last-child {
+  margin-bottom: 25px;
+}
+
+.project-photo {
+  width: 100%;
 }

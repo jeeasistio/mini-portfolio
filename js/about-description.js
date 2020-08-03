@@ -9,6 +9,7 @@ const toggleInactive = (img, text, skills, showing) => {
       text.style.display = 'block';
       showing = text;
     }
+    img.classList.toggle('showActive');
   })
 }
 

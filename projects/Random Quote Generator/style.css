@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana;
+}
+
+html {font-size: 62.5%;}
+
+body {
+  background: linear-gradient(#3f4c6b, #606c88);
+  color: #fff;
+}
+
+header {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {height: 85vh;}
+
+#about-select {
+  height: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+#select, #generate-btn {
+  margin-left: 2px;
+  background: #fff;
+  padding: 4px 7px;
+  font-size: 1.5rem;
+  border: none;
+  background: #996c33;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+#generate-btn:active {
+  transform: scale(0.9);
+}
+
+#quotes-ctn {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quotes {
+  text-align: center;
+  font-size: 1.5rem;
+  width: 300px;
+}
+
+.currQuote {
+  animation: fadeIn 0.4s linear;
+}
+
+#quote-text {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+#quote-author {
+  color: #ffc800;
+}
+
+@keyframes fadeOut {
+  from {
+    transform: translatey(0%);
+    opacity: 1;
+  }
+  to {
+    transform: translatey(-50%);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translatey(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translatey(0%);
+    opacity: 1;
+  }
+}

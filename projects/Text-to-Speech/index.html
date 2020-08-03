@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/98bc12c08c.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <title>Text to Speech</title>
+</head>
+<body>
+  <header>
+    <h1><i class="fas fa-microphone"></i> Text to Speech</h1>
+  </header>
+
+  <main>
+    <section id="wave"></section>
+    <section id="form-ctn">
+      <form id="form">
+        <div id="textarea-ctn">
+          <textarea id="textarea" placeholder="Enter Speech..." required></textarea>
+        </div>
+        <div id="ranges-ctn">
+          <label for="rate">Rate: <strong id="rate-value">1</strong></label>
+          <input type="range" id="rate" value="1" min="0.5" max="2" step="0.1" />
+          <label for="pitch">Pitch: <strong id="pitch-value">1</strong></label>
+          <input type="range" id="pitch" value="1" min="0" max="2" step="0.1" />
+        </div>
+        <div id="option-ctn">
+          <select id="select">
+            <option selected disabled>Select Voice</option>
+          </select>
+          <button type="submit" id="speak"><i class="fas fa-microphone"></i></button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

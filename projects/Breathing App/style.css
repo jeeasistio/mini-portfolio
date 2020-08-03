@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana;
+}
+
+html {font-size: 62.5%;}
+
+header {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  color: #fff;
+}
+
+main {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  width: 130px;
+  position: relative;
+  transform: scale(0.9);
+}
+
+#gradient-circle {
+  background: conic-gradient(
+    #000 0%,
+    #111 40%,
+    #ccc 40%,
+    #ccc 60%,
+    #888 60%,
+    #777 100%
+  );
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  z-index: -10;
+  border-radius: 50%;
+}
+
+#circle {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -5;
+  border-radius: 50%;
+}
+
+#pointer-ctn {
+  position: absolute;
+  top: -35px;
+  left: 43%;
+  width: 20px;
+  height: 75%;
+  animation: protate 7.5s linear forwards infinite;
+  transform-origin: bottom center;
+}
+
+#pointer {
+  width: 12px;
+  height: 12px;
+  background: #000;
+  border-radius: 50%;
+  display: block;
+}
+
+.grow {
+  animation: grow 3s linear forwards;
+}
+
+.shrink {
+  animation: shrink 3s linear forwards;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+@keyframes protate {
+  from {transform: rotate(0deg);}
+  to {transform:  rotate(360deg);}
+}
+
+@keyframes grow {
+  from {transform: scale(0.9);}
+  to {transform: scale(1.2);}
+}
+
+@keyframes shrink {
+  from {transform: scale(1.2);}
+  to {transform: scale(0.9);}
+}

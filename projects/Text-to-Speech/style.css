@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato, Sans-Serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  height: 15vh;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1, header i {
+  font-size: 2rem;
+}
+
+main {
+  height: 85vh;
+}
+
+#wave {
+  height: 30%;
+  background: #141414;
+  filter: invert(1);
+}
+
+#form-ctn {
+  height: 70%;
+}
+
+#form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid black;
+}
+
+#textarea {
+  resize: none;
+  padding: 15px 20px;
+  border: 1px solid #000;
+}
+
+input[type=range] {
+  margin-top: 10px;
+  -webkit-appearance: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  border-radius: 5px;
+  border: 1px solid #000;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 8px;
+  height: 15px;
+  border-radius: 2px;
+  background: #000;
+  transition: transform 0.2s ease;
+}
+
+label {
+  display: block;
+  font-size: 1.4rem;
+}
+
+#rate-value, #pitch-value {
+  color: #36f;
+}
+
+#option-ctn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#select {
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+  padding: 5px;
+  transition: all 0.2s ease;
+}
+
+#select:hover {
+  background: #fff;
+  color: #000;
+}
+
+#speak {
+  border: 1px solid #000;
+  font-size: 2rem;
+  border-radius: 50%;
+  background: #000;
+  color: #fff;
+  padding: 10px 14px;
+  margin-top: 20px;
+  transition: all 0.2s ease, transform 0.1s linear;
+}
+
+#speak:hover {
+  background: #fff;
+  color: #000;
+}
+
+#speak:active {
+  transform: scale(0.9);
+}
+
+@media only screen and (max-width: 360px) {
+  header {
+    height: 10vh;
+  }
+  
+  main {
+    height: 90vh;
+  }
+  
+  #form {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./style.css" type="text/css" title="style" />
+  <title>Meditation App</title>
+</head>
+<body>
+  <main>
+    <div class="vid-container">
+      <video loop width="100%">
+        <source src="./video/rain.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <article class="app">
+      <section class="time-select">
+        <button data-time="120">2 Minutes</button>
+        <button data-time="300">5 Minutes</button>
+        <button data-time="600">10 Minutes</button>
+      </section>
+      <section class="player-container">
+        <audio class="song">
+          <source src="./sounds/rain.mp3" />
+        </audio>
+        <img src="./svg/play.svg" alt="play" class="play" width="50px" />
+        <svg 
+          class="track-outline"
+          width="200" 
+          height="200" 
+          viewBox="0 0 200 200" 
+          fill="none" 
+          xmlns="http://www.w3.org/2000/svg">
+        <circle 
+          cx="100" 
+          cy="100" 
+          r="90" 
+          stroke="white" 
+          stroke-width="10"/>
+        </svg>
+        <svg 
+          class="moving-outline"
+          width="200" 
+          height="200" 
+          viewBox="0 0 200 200" 
+          fill="none" 
+          xmlns="http://www.w3.org/2000/svg">
+        <circle 
+          cx="100" 
+          cy="100" 
+          r="90" 
+          stroke="#0c6" 
+          stroke-width="10"/>
+        </svg>
+        <h2 class="time-display">0:00</h2>
+      </section>
+      <section class="sound-picker">
+        <button data-sound="./sounds/rain.mp3" data-video="./video/rain.mp4">
+          <img src="./svg/rain.svg" alt="rain" width="50px" />
+        </button>
+        <button data-sound="./sounds/beach.mp3" data-video="./video/beach.mp4">
+          <img src="./svg/beach.svg" alt="beach" width="50px" />
+        </button>
+      </section>
+    </article>
+  </main>
+  
+  <script src="./app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

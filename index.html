@@ -10,7 +10,7 @@
 
 <body>
   <div class="container">
-    <header>
+    <header class="header">
       <nav class="nav">
         <h1 class="nav-logo">Mini Portfolio</h1>
         <ul class="nav-ul">
@@ -25,28 +25,176 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <section id="about" class="about">
-        <p class="about-text"><span class="about-hi">Hi, I'm jeeasistio</span>. Hoping to become a web developer. I started learning web development this quarantine so I would be more productive while staying at home. It was supposed to be a past time but I'm hooked to it. Now I love web development.</p>
+        <p class="about-text"><span class="about-hi">Hi, I'm jeeasistio</span>. Hoping to become a web developer. I started learning web development this quarantine so I would be more productive while staying at home. It was supposed to be a pass time but I'm hooked to it. Now I love web development.</p>
         <div class="about-skills">
           <div class="skill">
+            <img src="/assets/html.png" alt="html" class="skill-png">
             <h4 class="skill-heading">HTML</h4>
             <small class="skill-description">Semantic Tags</small>
           </div>
           <div class="skill">
+            <img src="/assets/css.png" alt="css" class="skill-png">
             <h4 class="skill-heading">CSS</h4>
             <small class="skill-description">Responsive Web Design</small>
           </div>
           <div class="skill">
+            <img src="/assets/js.png" alt="js" class="skill-png">
             <h4 class="skill-heading">Javascript</h4>
-            <small class="skill-description">Data structures and Algorithms</small>
+            <small class="skill-description">Data structures and Algorithm</small>
           </div>
         </div>
-        <img class="about-photo" src="assets/profile.jpg" alt="handsome-guy"/>
+        <div class="about-photo-ctn">
+          <img class="about-photo" src="assets/profile.jpg" alt="handsome-guy" />
+          <div class="skill-photo">
+            <h3>Skills</h3>
+          </div>
+        </div>
       </section>
-      <section id="projects" class="projects"></section>
+      <section id="projects" class="projects">
+        <p class="projects-intro">These are the projects I made so far</p>
+        <header class="projects-header"><h2>Small Projects</h2></header>
+        <div class="projects-container">
+        <article class="project">
+          <figure>
+            <a href="projects/Booklist/index.html" target="_blank"><img class="project-photo" src="assets/booklist.jpg" alt="project" /></a>
+            <figcaption>
+              <p class="project-title">Booklist</p>
+              <p class="project-git">https://blabla</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="project">
+          <figure>
+            <a href="projects/Breathing App/index.html" target="_blank"><img class="project-photo" src="assets/breathing-app.jpg" alt="project" /></a>
+            <figcaption>
+              <p class="project-title">Breathing App</p>
+              <p class="project-git">https://blabla</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="project">
+          <figure>
+            <a href="projects/Calculator/index.html" target="_blank"><img class="project-photo" src="assets/calculator.jpg" alt="project" /></a>
+            <figcaption>
+              <p class="project-title">Calculator</p>
+              <p class="project-git">https://blabla</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="project">
+          <figure>
+            <a href="projects/Color Generator/index.html" target="_blank"><img class="project-photo" src="assets/color-generator.jpg" alt="project" /></a>
+            <figcaption>
+              <p class="project-title">Color Generator</p>
+              <p class="project-git">https://blabla</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="project">
+          <figure>
+            <a href="projects/Drum Machine/index.html" target="_blank"><img class="project-photo" src="assets/drum-machine.jpg" alt="project" /></a>
+            <figcaption>
+              <p class="project-title">Drum Machine</p>
+              <p class="project-git">https://blabla</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="project">
+          <figure>
+            <a href="projects/Geocode API App/index.html" target="_blank"><img class="project-photo" src="assets/geocode-api.jpg" alt="project" /></a>
+            <figcaption>
+              <p class="project-title">Geocode API App</p>
+              <p class="project-git">https://blabla</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="project">
+          <figure>
+            <a href="projects/Maps API App/index.html" target="_blank"><img class="project-photo" src="assets/maps-api.jpg" alt="project" /></a>
+            <figcaption>
+              <p class="project-title">Maps API App</p>
+              <p class="project-git">https://blabla</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="project">
+          <figure>
+            <a href="projects/Meditation App/index.html" target="_blank"><img class="project-photo" src="assets/meditation-app.jpg" alt="project" /></a>
+            <figcaption>
+              <p class="project-title">Meditation App</p>
+              <p class="project-git">https://blabla</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="project">
+          <figure>
+            <a href="projects/Pomodoro Clock/index.html" target="_blank"><img class="project-photo" src="assets/pomodoro-clock.jpg" alt="project" /></a>
+            <figcaption>
+              <p class="project-title">Pomodoro Clock</p>
+              <p class="project-git">https://blabla</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="project">
+          <figure>
+            <a href="projects/Random Quote Generator/index.html" target="_blank"><img class="project-photo" src="assets/random-quote-generator.jpg" alt="project" /></a>
+            <figcaption>
+              <p class="project-title">Random Quote Generator</p>
+              <p class="project-git">https://blabla</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="project">
+          <figure>
+            <a href="projects/Rock Paper Scissors/index.html" target="_blank"><img class="project-photo" src="assets/rock-paper-scissors.jpg" alt="project" /></a>
+            <figcaption>
+              <p class="project-title">Rock Paper Scissors</p>
+              <p class="project-git">https://blabla</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="project">
+          <figure>
+            <a href="projects/Search Places App/index.html" target="_blank"><img class="project-photo" src="assets/search-location.jpg" alt="project" /></a>
+            <figcaption>
+              <p class="project-title">Search Places App</p>
+              <p class="project-git">https://blabla</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="project">
+          <figure>
+            <a href="projects/Text-to-Speech/index.html" target="_blank"><img class="project-photo" src="assets/text-to-speech.jpg" alt="project" /></a>
+            <figcaption>
+              <p class="project-title">Text-to-Speeech</p>
+              <p class="project-git">https://blabla</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="project">
+          <figure>
+            <a href="projects/To-Do List/index.html" target="_blank"><img class="project-photo" src="assets/to-do-list.jpg" alt="project" /></a>
+            <figcaption>
+              <p class="project-title">To-do List</p>
+              <p class="project-git">https://blabla</p>
+            </figcaption>
+          </figure>
+        </article>
+        <article class="project">
+          <figure>
+            <a href="projects/Weight Converter/index.html" target="_blank"><img class="project-photo" src="assets/weight-converter.jpg" alt="project" /></a>
+            <figcaption>
+              <p class="project-title">Weight Converter</p>
+              <p class="project-git">https://blabla</p>
+            </figcaption>
+          </figure>
+        </article>
+        </div>
+      </section>
     </main>
-    <footer>
+    <footer class="footer">
       <section id="contact" class="contact"></section>
     </footer>
   </div>

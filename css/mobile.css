@@ -6,7 +6,7 @@
   ;
 }
 
-header {
+.header {
   height: 10vh;
 }
 
@@ -41,13 +41,13 @@ header {
   opacity: 1;
 }
 
-main {
+.main {
   margin-top: 10vh;
   height: auto;
   overflow: visible;
 }
 
-.about, .projects {
+.about {
   height: 100vh;
 }
 
@@ -56,7 +56,7 @@ main {
   justify-content: flex-end;
 }
 
-.about-text, .about-photo, .about-skills {
+.about-text, .about-photo-ctn, .about-skills {
   margin-top: 15vh;
 }
 
@@ -64,11 +64,16 @@ main {
   width: 70%;
 }
 
-.about-photo {
+.about-photo, .skill-photo {
   border-radius: 50%;
 }
 
-footer {
+.projects {
+  height: auto;
+  overflow: visible;
+}
+
+.footer {
   margin: 0;
   height: 50vh;
 }
