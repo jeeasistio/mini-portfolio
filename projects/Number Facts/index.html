@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/98bc12c08c.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+  <title>Number Facts</title>
+</head>
+<body>
+  <header>
+    <h1><i class="fas fa-calculator"></i> Number Facts</h1>
+  </header>
+
+  <main>
+    <section class="container">
+      <h3>Enter a number and get a random fact</h3>
+      <section class="input">
+        <input type="text" id="number-input" placeholder="Enter a number..." />
+        <select name="type" id="type">
+          <option value="trivia" selected>Trivia</option>
+          <option value="year">Year</option>
+          <option value="date">Date</option>
+        </select>
+      </section>
+      <section class="fact"></section>
+    </section>
+  </main>
+
+  <script src="script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

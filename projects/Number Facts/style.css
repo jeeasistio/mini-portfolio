@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font: 62.5% Lato, sans-serif;
+}
+
+header {
+  height: 15vh;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1,header  i {
+  font-size: 2rem;
+}
+
+main {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main h3 {
+  font-size: 1.5rem;
+}
+
+main .fact {
+  font-size: 1.3rem;
+  display: none;
+}
+
+main .container {
+  width: 60%;
+  height: 50vh;
+  padding: 8px 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+main #number-input {
+  border: 1px solid #000;
+  padding: 4px 6px;
+}
+
+main select {
+  border: 1px solid black;
+  padding: 3px 5px;
+  background: #111;
+  color: #eee;
+  transition: all 0.2s ease;
+}
+
+main select:hover {
+  background: #eee;
+  color: #111;
+}
+
+.input {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media only screen and (max-width: 360px) {
+  main .container {
+    width: 80%;
+  }
+  
+  header {
+    height: 10vh;
+  }
+  
+  #number-input {
+    width: 65%;
+  }
+}
