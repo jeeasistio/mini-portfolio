@@ -101,7 +101,7 @@
 }
 
 .projects {
-  overflow: scroll;
+  overflow: auto;
   background: lightcyan;
 }
 
@@ -109,13 +109,14 @@
   font-size: 1.3rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, 150px);
-  grid-gap: 25px 8px;
+  grid-gap: 25px 15px;
   justify-content: center;
+  padding: 25px 15px;
 }
 
 .projects-header, .projects-intro {
   font-size: 1.5rem;
-  margin: 25px;
+  padding: 15px;
   text-align: center;
 }
 
@@ -127,7 +128,7 @@
   align-items: center;
   text-align: center;
   border: 1px solid #000;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -139,10 +140,23 @@
   align-items: center;
 }
 
-.project:last-child {
-  margin-bottom: 25px;
-}
-
 .project-photo {
   width: 100%;
+  border-bottom: 1px solid #000;
+}
+
+.project-title {
+  font-size: 1.5rem;
+}
+
+.project-git {
+  padding: 4px 7px;
+  border: 1px solid #000;
+  border-radius: 30px;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.show-more {
+  display: none;
 }

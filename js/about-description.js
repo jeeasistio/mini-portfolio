@@ -1,4 +1,5 @@
-const toggleInactive = (img, text, skills, showing) => {
+const toggleInactive = (img, text, skills) => {
+  let showing = text;
   img.addEventListener('click', () => {
     if (showing === text) {
       text.style.display = 'none';

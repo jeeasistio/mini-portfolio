@@ -22,6 +22,10 @@ html {
   overflow: hidden;
 }
 
+.copy-textarea {
+  display: none;
+}
+
 header, main, footer {
   border: 1px solid #000;
 }

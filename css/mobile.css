@@ -69,8 +69,41 @@
 }
 
 .projects {
-  height: auto;
-  overflow: visible;
+  height: 100vh;
+  overflow: hidden;
+  transition: all 1s;
+  position: relative;
+}
+
+.fadeBg {
+  height: 50%;
+  width: 100%;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0) 0%, 
+    rgba(255, 255, 255, 0.95) 50%, 
+    rgba(255, 255, 255, 1) 100%
+  );
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.show-more {
+  display: block;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 2;
+}
+
+.toggleShow {
+  height: 1780px;
+  overflow: auto;
+}
+
+.displayNone {
+  display: none;
 }
 
 .footer {
