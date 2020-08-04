@@ -3,7 +3,7 @@ const showMore = (showBtn, projects, fadeBg) => {
   showBtn.addEventListener('click', () => {
     projects.classList.toggle('toggleShow');
     fadeBg.classList.toggle('displayNone');
-    
+
     if (!showingMore) {
       showBtn.textContent = 'Show less';
       showingMore = true;

@@ -7,7 +7,8 @@
   overflow: hidden;
 }
 
-.about, .projects {
+.about,
+.projects {
   width: 100vw;
   height: 85vh;
 }
@@ -20,12 +21,14 @@
   align-items: center;
 }
 
-.about-hi, .skill-heading {
+.about-hi,
+.skill-heading {
   font-weight: bolder;
   font-size: 1.8rem;
 }
 
-.about-text, .about-skills {
+.about-text,
+.about-skills {
   width: 40%;
   font-size: 1.35rem;
   line-height: 18px;
@@ -59,7 +62,8 @@
   transition: all 0.5s;
 }
 
-.about-photo, .skill-photo {
+.about-photo,
+.skill-photo {
   position: absolute;
   backface-visibility: hidden;
   border-radius: 30px;
@@ -114,7 +118,8 @@
   padding: 25px 15px;
 }
 
-.projects-header, .projects-intro {
+.projects-header,
+.projects-intro {
   font-size: 1.5rem;
   padding: 15px;
   text-align: center;

@@ -13,10 +13,10 @@ html {
 
 .container {
   display: grid;
-  grid-template-areas: 
-  ". . . . . ."
-  "mn mn mn ftr ftr ftr"
-  "mn mn mn ftr ftr ftr"
+  grid-template-areas:
+    ". . . . . ."
+    "mn mn mn ftr ftr ftr"
+    "mn mn mn ftr ftr ftr"
   ;
   position: relative;
   overflow: hidden;
@@ -26,6 +26,8 @@ html {
   display: none;
 }
 
-header, main, footer {
+header,
+main,
+footer {
   border: 1px solid #000;
 }
