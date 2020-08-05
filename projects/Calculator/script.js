@@ -37,12 +37,10 @@ buttons.addEventListener('click', e => {
   }
 
   if (clicked === equals) {
-    if (output.textContent.match(/^[\+\-\*\/]/)) {
-      const expression = history.textContent + output.textContent;
-      printHistory(eval(expression))
-    } else {
-      printHistory(eval(output.textContent));
-    }
+const newExpression = history.textContent + output.textContent;
+    output.textContent.match(/^[\+\-\*\/]/) ? 
+      printHistory(eval(newExpression)) : printHistory(eval(output.textContent));
+
     clearOutput(output);
     history.style.color = '#0cf'
     history.style.fontSize = '2rem'

@@ -45,6 +45,7 @@
   margin-top: 10vh;
   height: auto;
   overflow: visible;
+  flex-direction: column;
 }
 
 .about {
@@ -53,18 +54,12 @@
 
 .about {
   flex-direction: column-reverse;
-  justify-content: flex-end;
-}
-
-.about-text,
-.about-photo-ctn,
-.about-skills {
-  margin-top: 15vh;
 }
 
 .about-text,
 .about-skills {
   width: 70%;
+  margin-bottom: 40px;
 }
 
 .about-photo,
@@ -75,7 +70,7 @@
 .projects {
   height: 100vh;
   overflow: hidden;
-  transition: all 1s;
+  transition: height 0.6s;
   position: relative;
 }
 
@@ -88,6 +83,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  transition: opacity 0.6s;
 }
 
 .show-more {
@@ -100,15 +96,16 @@
 }
 
 .toggleShow {
-  height: 1780px;
+  height: 900px;
   overflow: auto;
 }
 
 .displayNone {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .footer {
   margin: 0;
-  height: 50vh;
+  height: 40vh;
 }

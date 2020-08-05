@@ -6,7 +6,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font: 62.5% Lato, sans-serif;
   --primary: #000;
   --secondary: #fff;
 }
@@ -23,7 +23,10 @@ html {
 }
 
 .copy-textarea {
-  display: none;
+  position: fixed;
+  left: -999px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 header,
