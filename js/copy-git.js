@@ -6,7 +6,7 @@ const copy = (btn, textarea) => {
   btn.textContent = 'Copied!';
   btn.style.color = 'var(--white)';
   btn.style.background = 'var(--green)';
-  btn.style.borderColor ='var(--green)';
+  btn.style.borderColor = 'var(--green)';
   setTimeout(() => {
     btn.textContent = 'Copy git'
     btn.style.background = '#d4d4d4';

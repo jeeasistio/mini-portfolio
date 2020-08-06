@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -16,6 +18,8 @@ html {
   --blue: #668cff;
   --green: #3c3;
   --pink: #c3f;
+  --fb: #3b5998;
+  --twitter: #00acee;
 }
 
 .container {

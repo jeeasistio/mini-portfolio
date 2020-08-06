@@ -33,4 +33,22 @@
   font-size: 3rem;
   padding: 0;
   padding: 10px;
+  transition: transform 0.1s linear;
+}
+
+.contact-li:active {
+  transform: scale(0.8);
+}
+
+.fa-facebook {
+  color: var(--fb);
+}
+
+.fa-twitter {
+  color: var(--twitter);
+}
+
+.fa-github,
+.fa-codepen {
+  color: var(--black);
 }
