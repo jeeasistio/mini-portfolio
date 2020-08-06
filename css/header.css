@@ -5,7 +5,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: var(--secondary);
+  background: var(--white);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
   z-index: 9;
 }
 
@@ -16,6 +17,10 @@
   align-items: center;
   padding: 0 25px;
   position: relative;
+}
+
+.nav-logo {
+  color: var(--orange);
 }
 
 .nav-ul {
@@ -30,7 +35,7 @@
 .nav-ul a {
   text-decoration: none;
   display: block;
-  padding: 8px 5px;
+  padding: 15px 5px;
 }
 
 .nav-burger {
@@ -41,5 +46,5 @@
   width: 20px;
   height: 2px;
   margin-bottom: 4px;
-  background: var(--primary);
+  background: var(--black);
 }

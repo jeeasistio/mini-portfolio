@@ -1,6 +1,5 @@
 .footer {
   grid-area: ftr;
-  background: lightgreen;
   margin-top: 15vh;
   height: 85vh;
   width: 100vw;
@@ -21,9 +20,8 @@
   line-height: 50px;
 }
 
-.farewell-wave {
-  width: 70px;
-  animation: wave 2s linear infinite;
+.farewell-photo {
+  width: 100px;
 }
 
 .contact-ul {
@@ -35,17 +33,4 @@
   font-size: 3rem;
   padding: 0;
   padding: 10px;
-}
-
-@keyframes wave {
-  0% {
-    transform: rotateZ(0deg);
-    transform-origin: bottom;
-  }
-  50% {
-    transform: rotateZ(40deg);
-  }
-  100% {
-    transform: rotateZ(-40%);
-  }
 }
